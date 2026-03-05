@@ -19,4 +19,5 @@ The data for this analysis comes from the St. Louis Federal Reserve's [FRED](htt
 - `raw_data/`: A directory containing the raw data files downloaded from FRED.
 
 ## Findings
+![Beveridge Curve](img/beveridge_curve.png)
 The analysis reveals that, indeed, there have been significant shifts in the Beveridge Curve during the periods following the 2008 financial crisis and the COVID-19 pandemic. The curve has shifted outward, indicating a decrease in the efficiency of the labor market in matching unemployed workers to available job vacancies. This suggests that structural changes in the economy, such as changes in the types of jobs available or changes in worker preferences, may be contributing to this phenomenon.
