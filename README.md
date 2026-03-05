@@ -4,13 +4,21 @@ The Beveridge Curve is a graphical representation of the relationship between un
 
 The position on the curve can tell us where we are in the business cycle. For example, during a recession, we would expect to see higher unemployment and fewer job vacancies, placing us on the lower right part of the curve. Conversely, during an economic expansion, we would expect to see lower unemployment and more job vacancies, placing us on the upper left part of the curve.
 
-Shifts in the curve itself (as opposed to movements *along* the curve) can indicate changes in the efficiency of the labor market. That is, if there is a shift outward (to the right), it might tell us that for a given level of unemployment, there are more job vacancies than before. So, the labor market has become less efficient at matching workers to jobs. We have seen this in the aftermath of the 2008 financial crisis, and more recently, in the aftermath of the COVID-19 pandemic. We will explore these regime shifts in the Beveridge Curve in this notebook.
+Shifts in the curve itself (as opposed to movements *along* the curve) can indicate changes in the efficiency of the labor market. That is, if there is a shift outward (to the right), it might tell us that for a given level of unemployment, there are more job vacancies than before. So, the labor market has become less efficient at matching workers to jobs. We have seen this in the aftermath of the 2008 financial crisis, and more recently, in the aftermath of the COVID-19 pandemic. 
+
+In this notebook, I plot the Beveridge curve over time and compare clusters of points across periods (pre-2008, post-2008, post-2020) to visualize potential regime shifts.
 
 ## Specifications
 ### Data
 The data for this analysis comes from the St. Louis Federal Reserve's [FRED](https://fred.stlouisfed.org/) database. We will be using the following series:
 - Unemployment Rate [(UNRATE)](https://fred.stlouisfed.org/series/UNRATE)
 - Job Openings: Total Nonfarm [(JTSJOR)](https://fred.stlouisfed.org/series/JTSJOR)
+
+### How to Run
+Create a virtual environment (recommended), install dependencies, then run the notebook:
+
+`pip install -r requirements.txt`
+`jupyter notebook main.ipynb`
 
 ### Repo Structure
 - `main.ipynb`: The main Jupyter notebook containing the analysis and visualizations.
@@ -20,4 +28,4 @@ The data for this analysis comes from the St. Louis Federal Reserve's [FRED](htt
 
 ## Findings
 ![Beveridge Curve](img/beveridge_curve.png)
-The analysis reveals that, indeed, there have been significant shifts in the Beveridge Curve during the periods following the 2008 financial crisis and the COVID-19 pandemic. The curve has shifted outward, indicating a decrease in the efficiency of the labor market in matching unemployed workers to available job vacancies. This suggests that structural changes in the economy, such as changes in the types of jobs available or changes in worker preferences, may be contributing to this phenomenon.
+The plotted points suggest an outward shift in the Beveridge curve in the period after the 2008 financial crisis and again after 2020, relative to the pre-2008 cloud of observations. This pattern is consistent with a change in the vacancy–unemployment relationship (often discussed as changes in matching efficiency), though this notebook is descriptive rather than causal.
