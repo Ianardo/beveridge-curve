@@ -1,3 +1,2 @@
 # Beveridge Curve
-Analysis of beveridge curve using FRED datagit add .
-git commit -m "initial commit"
+Analysis of Beveridge Curve using FRED data.
